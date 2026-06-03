@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "jest"
+    "test": "jest",
+    "seed:student5": "node seeds/seedStudent5.js"
   },
   "keywords": [
     "authentication",
