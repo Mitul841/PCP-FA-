@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: pcp-recruitment-api
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        scope: all
+      - key: JWT_SECRET
+        scope: all
+      - key: FRONTEND_URL
+        scope: all
